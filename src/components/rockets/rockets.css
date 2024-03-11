@@ -1,0 +1,141 @@
+.rockets-wrapper {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rockets-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.rockets-article {
+    background-color: rgb(24, 23, 23);
+    width: 450px;
+}
+
+.rockets-article h2 {
+    padding: 20px 0 10px 20px;
+}
+
+.rockets-article p {
+    padding: 0 20px 20px 20px;
+    opacity: 0.8;
+}
+
+.rockets-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.rockets-item img {
+    width: 450px;
+    height: 300px;
+}
+
+.single-rocket-wrapper {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+.single-rocket-info {
+    width: 50%;
+}
+
+.single-rocket-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.left-right-wrapper {
+    display: flex;
+    align-items: center;
+}
+.left {
+    margin: 20px 40px 20px 0;
+}
+
+.single-rocket-info p {
+    opacity: 0.8;
+}
+
+.img-wrapper {
+    width: 50%;
+}
+
+.img-wrapper img {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.single-rocket-wrapper a {
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    opacity: 0.8;
+}
+
+.single-rocket-wrapper button {
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .rockets-wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-rocket-wrapper {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .single-rocket-info {
+        width: 100%;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .img-wrapper img {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1288px) {
+    .rockets-wrapper {
+        width: 100%;
+    }
+    
+    .rockets-item img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .rockets-article {
+        width: 350px;
+    }
+}

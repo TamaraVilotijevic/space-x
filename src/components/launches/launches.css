@@ -1,0 +1,116 @@
+.launches-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.launches-item {
+    width: 250px;
+    height: 330px;
+    padding: 10px;
+    background-color: rgb(24, 23, 23);
+    overflow: hidden;
+}
+
+.launches-wrapper img {
+    width: 190px;
+    height: 200px;
+    margin: 10px 0;
+}
+
+.launches-wrapper a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.launches-item p {
+    opacity: 0.7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.single-launch-wrapper {
+    margin: 50px auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.single-launch-wrapper a {
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    opacity: 0.8;
+}
+
+.single-launch {
+    width: 60%;
+}
+
+.single-launch h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.single-launch p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.single-launch button {
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.single-launch-wrapper img {
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1120px) {
+    .launches-wrapper {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .launches-item {
+        width: 240px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .single-launch-wrapper {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .single-launch {
+        width: 100%;
+    }
+
+    .single-launch-wrapper img {
+        margin-top: 30px;
+        width: 400px;
+        height: 400px;
+    }
+}

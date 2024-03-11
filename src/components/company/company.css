@@ -1,0 +1,50 @@
+.company-wrapper {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.company-wrapper h3 {
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.company-wrapper p {
+    opacity: 0.8;
+}
+
+.company-wrapper a {
+    display: block;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.summary {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 900px) {
+    .company-wrapper {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .company-wrapper h3 {
+        width: 30%;
+    }
+
+    .summary {
+        width: 90%;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+}
