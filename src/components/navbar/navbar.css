@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.navtabs-wrapper {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 50px;
+    text-transform: uppercase;
+  }
+  
+.navtabs-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
+.navtabs-wrapper a:hover {
+  opacity: 0.8;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.navtabs-open {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    max-width: 200px;
+  }
+
+  .nav-icon {
+      display: block;
+      margin-right: 20px;
+      font-size: 30px;
+  }
+  .nav-icon:hover {
+    cursor: pointer;
+  }
+
+  .navtabs-wrapper {
+    display: none;
+  }
+
+  @keyframes slideDown {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 200px;
+    }
+  }
+
+  .navtabs-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    animation: slideDown 1.3s ease forwards;
+  }
+  
+  .navtabs-open a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+  }
+}

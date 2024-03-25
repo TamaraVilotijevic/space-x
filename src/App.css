@@ -3,8 +3,7 @@
 }
 
 h1 {
-  font-size: 60px;
-  margin-top: 20px;
+  font-size: 50px;
 }
 
 .home {
@@ -24,15 +23,5 @@ h1 {
 @media only screen and (max-width: 900px) {
   h1 {
     font-size: 40px;
-  }
-
-  .navtabs-wrapper a {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar {
-    align-items: center;
   }
 }

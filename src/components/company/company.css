@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-top: 25px;
 }
 
 .company-wrapper h3 {
@@ -25,7 +26,8 @@
 }
 
 .summary {
-    width: 50%;
+    width: 60%;
+    max-width: 750px;
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
@@ -36,15 +38,16 @@
     .company-wrapper {
         flex-direction: column;
         margin-left: 30px;
+        gap: 30px;
     }
 
     .company-wrapper h3 {
-        width: 30%;
+        width: fit-content;
     }
 
     .summary {
-        width: 90%;
-        margin-bottom: 30px;
+        width: 100%;
+        padding: 30px;
         text-align: left;
     }
 }

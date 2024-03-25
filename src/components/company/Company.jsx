@@ -19,10 +19,10 @@ const Company = ({companyInfo}) => {
         </div>
         <div>
           <h3>Social media</h3>
-          <a href={companyInfo.links.website}>Website</a>
-          <a href={companyInfo.links.flickr}>Flickr</a>
-          <a href={companyInfo.links.twitter}>Twitter</a>
-          <a href={companyInfo.links.elon_twitter}>Elon Musk Twitter</a>
+          <a href={companyInfo.links.website} target='_blank'>Website</a>
+          <a href={companyInfo.links.flickr} target='_blank'>Flickr</a>
+          <a href={companyInfo.links.twitter} target='_blank'>Twitter</a>
+          <a href={companyInfo.links.elon_twitter} target='_blank'>Elon Musk Twitter</a>
         </div>
     </div>
     <p className='summary'>{companyInfo.summary}</p>
