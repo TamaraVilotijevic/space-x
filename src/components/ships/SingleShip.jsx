@@ -14,7 +14,6 @@ const SingleShip = () => {
     useEffect(() => {
         api.get(`/ships/${shipId}`)
         .then((res) => {
-            console.log(res.data);
             setShip(res.data);
         })
         .catch(err => setError(true))
@@ -34,7 +33,7 @@ const SingleShip = () => {
                 <p><b>Home port:</b> {ship.home_port}</p>
                 <p><b>Type:</b> {ship.type}</p>
                 <p><b>Mass:</b> {ship.mass_kg} kg</p>
-                <a href={ship.link}>Read more</a>
+                <a href={ship.link} target="_blank">Read more</a>
                 <button onClick={handleBack}>&#171; Back to ships</button>
             </div>
             <div className="single-ship-img">

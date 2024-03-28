@@ -14,7 +14,6 @@ const SingleRocket = () => {
     useEffect(() => {
         api.get(`/rockets/${rocketId}`)
         .then((res) => {
-            console.log(res.data);
             setRocket(res.data);
         })
         .catch(err => setError(true))

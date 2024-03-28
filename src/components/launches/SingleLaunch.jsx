@@ -14,7 +14,6 @@ const SingleLaunch = () => {
     useEffect(() => {
         api.get(`/launches/${launchId}`)
         .then((res) =>{
-            console.log(res.data);
             setLaunch(res.data);
         })
         .catch(err => setError(true))

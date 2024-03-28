@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 
 const RocketsListItem = ({rocket}) => {
-    return <div className="rockets-item">
-            <Link to={`/rockets/${rocket.id}`}>
-                <img src={rocket.flickr_images[0]} alt={rocket.name} />
-                <div className="rockets-article">
-                    <h2>{rocket.name}</h2>
-                    <p>{rocket.description}</p>
+    return <Link to={`/rockets/${rocket.id}`} className="rockets-item">
+                <div className="rockets-img-wrapper">
+                    <img src={rocket.flickr_images[0]} alt={rocket.name} />
                 </div>
-            </Link>
-        </div>
+                <h2>{rocket.name}</h2>
+                <p>{rocket.description}</p>
+            </Link>;
 };
 
 export default RocketsListItem;

@@ -12,7 +12,6 @@ const ShipsView = () => {
     useEffect(() => {
         api.get('/ships')
         .then(res => {
-            console.log(res.data);
             setShips(res.data);
         })
         .catch(err => setError(true))

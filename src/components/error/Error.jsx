@@ -5,7 +5,7 @@ import './style.css';
 const Error = ({error}) => {
     const navigate = useNavigate();
     const refreshPage = () => {
-        navigate(0); //reload current route
+        navigate(0);
       };
 
     return <div className="error-wrapper">

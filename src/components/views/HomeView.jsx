@@ -12,7 +12,6 @@ const HomeView = () => {
     useEffect(() => {
         api.get('/company')
         .then((res) => {
-            console.log(res);
             setData(res.data);
         }).catch((err) => {
             setError(true);

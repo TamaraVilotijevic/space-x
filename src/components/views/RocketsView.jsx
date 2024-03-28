@@ -12,7 +12,6 @@ const RocketsView = () => {
     useEffect(() => {
         api.get('/rockets')
         .then(res => {
-            console.log(res.data);
             setRockets(res.data);
         })
         .catch(err => setError(true))

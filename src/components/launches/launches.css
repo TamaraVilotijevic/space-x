@@ -1,29 +1,31 @@
 .launches-wrapper {
-    width: 1100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
 .launches-item {
-    width: 250px;
-    height: 330px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(24, 23, 23);
     overflow: hidden;
 }
 
 .launches-wrapper img {
-    width: 190px;
-    height: 200px;
-    margin: 10px 0;
+    max-width: 100%;
+    padding: 10px 0;
 }
 
 .launches-wrapper a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    transition: ease-in-out .3s;
+}
+
+.launches-wrapper a:hover {
+    transform: scale(1.03);
 }
 
 .launches-item p {
@@ -35,7 +37,8 @@
 
 .single-launch-wrapper {
     margin: 50px auto;
-    width: 60%;
+    width: 70%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,21 +82,13 @@
 }
 
 .single-launch-wrapper img {
-    width: 300px;
-    height: 300px;
+    max-width: 100%;
     margin-left: 10px;
 }
 
 @media only screen and (max-width: 1120px) {
     .launches-wrapper {
-        width: 100%;
-        justify-content: center;
-
-    }
-
-    .launches-item {
-        width: 240px;
-        height: 330px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -101,7 +96,7 @@
     .single-launch-wrapper {
         width: 100%;
         flex-direction: column;
-        padding: 10px;
+        padding: 0 20px;
     }
 
     .single-launch {
@@ -110,7 +105,18 @@
 
     .single-launch-wrapper img {
         margin-top: 30px;
-        width: 400px;
-        height: 400px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .launches-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .launches-wrapper {
+        grid-template-columns: 1fr;
     }
 }
