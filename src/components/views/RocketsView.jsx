@@ -1,29 +1,29 @@
 import api from "../../services/api";
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
 import RocketsList from "../rockets/RocketsList";
 import Loading from "../loading/Loading";
 import Error from "../error/Error";
+import { RocketsContext } from "../../context/RocketsContext";
 
 const RocketsView = () => {
-    const [rockets, setRockets] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
+    const {state, dispatch} = useContext(RocketsContext);
+    const {rockets, loading, error} = state;
 
     useEffect(() => {
+        dispatch({type: 'FETCH_ROCKETS_REQUEST'});
         api.get('/rockets')
         .then(res => {
-            setRockets(res.data);
+            dispatch({type: 'FETCH_ROCKETS_SUCCESS', payload: res.data});
         })
-        .catch(err => setError(true))
-        .finally(() => setLoading(false));
+        .catch(error => {
+            dispatch({type: 'FETCH_ROCKETS_ERROR', payload: error.response});
+        })
     }, []);
 
-    return <div>
+    return <>
         <h1>Rockets</h1>
-        <div>
-        {loading ? (<Loading />) : error ? (<Error />) : <RocketsList rockets={rockets} />}
-        </div>
-    </div>;
+        {loading ? (<Loading />) : error ? (<Error error={error} />) : (<RocketsList rockets={rockets} />)}
+    </>;
 };
 
 export default RocketsView;
