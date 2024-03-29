@@ -101,7 +101,6 @@
 
 @media only screen and (max-width: 800px) {
     .rockets-wrapper {
-        width: 80%;
         grid-template-columns: 1fr;
     }
 
