@@ -23,7 +23,7 @@
 
 .ships-article p {
     padding: 0 20px 10px 20px;
-    opacity: 0.8;
+    color: rgb(206, 201, 201);
 }
 
 .ships-item a {
@@ -36,10 +36,9 @@
     padding: 10px;
     text-align: center;
     margin: 10px 20px;
-    color: white;
-    border: 2px solid white;
+    color: rgb(206, 201, 201);
+    border: 2px solid rgb(206, 201, 201);
     background-color: rgb(24, 23, 23);
-    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -69,7 +68,7 @@
 }
 
 .single-ship-info p {
-    opacity: 0.8;
+    color: rgb(206, 201, 201);
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -80,17 +79,15 @@
     margin: 20px 0;
     display: block;
     text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    opacity: 0.8;
+    color: rgb(206, 201, 201);
+    border: 2px solid rgb(206, 201, 201);
 }
 
 .single-ship-wrapper button {
     border: none;
     font-size: 20px;
-    color: white;
     background-color: black;
-    opacity: 0.8;
+    color: rgb(206, 201, 201);
     cursor: pointer;
     margin-top: 10px;
 }
