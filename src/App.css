@@ -11,12 +11,12 @@ h1 {
     background: url('https://www.travelandleisure.com/thmb/2RARACU9HQ3ieLg_CCJhxDnh9Q8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-spacex-space-station-SPACEX0523-48e8ab4f27fd403ebd0ea15d0375f827.jpg');
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 @media only screen and (max-width: 1140px) {
   .home {
-      height: 110vh;
+      min-height: 110vh;
       background-position: center;
   }
 }
